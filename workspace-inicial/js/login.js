@@ -8,6 +8,5 @@ function login() {
 
         alert('Bienvenido ' + username);
         return true;
-    
 
 }
