@@ -2,65 +2,78 @@
 <html lang="es">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>eMercado - Todo lo que busques está aquí</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos - Autos</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #fddde6;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: #f0f0f0;
+      padding: 1.5rem;
+      border-radius: 12px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #444;
+      text-align: center;
+    }
+
+    .product-footer {
+      background-color: white;
+      padding: 0.8rem;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categorías</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sell.html">Vender</a>
-          </li>
-          <li class="nav-item">
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <main class="pb-5 container">
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+  <main>
+    <div class="product-container" id="productList">
+      <!-- Productos se insertan aquí -->
     </div>
   </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
-    </div>
-  </footer>
-  <div id="spinner-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/init.js"></script>
+
   <script src="js/products.js"></script>
 </body>
 
