@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b2c80;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 80%; 
+}
+
+/* Imagen de perfil */
+#foto-perfil img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Formulario LogIn */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.login-form input {
+  width: 280px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.6);
+}
+
+/* Switch Recordar Contraseña */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: red;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.recordar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+}
+
+/* Botón Ingresar */
+.btn-login {
+  width: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  align-self: flex-end;
+}
+
+.btn-login i {
+  margin-left: 8px;
+}
+
+.btn-login:hover {
+  background-color: #aaa;
+}
+
+/* Botón Regístrate */
+.btn-sign-in {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: auto; 
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.texto-registro {
+  color: white;
+  font-size: 14px;
+}
+
+.btn-sign-in button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-sign-in button:hover {
+  background-color: #333;
+}
